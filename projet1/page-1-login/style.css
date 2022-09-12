@@ -1,14 +1,17 @@
 @media screen and (max-width: 10000000px) {
-    .container{
+    .container {
         background-color: #cfd8dc;
         display: grid;
-        
-        grid-template-rows: 20px auto;
+
+        grid-template-rows: 20px auto auto 20px;
         grid-template-areas:
             "header"
             "section"
-            ;
+            "inputs"
+            "footer"
+        ;
     }
+
     .header {
         grid-area: header;
         position: fixed;
@@ -17,18 +20,80 @@
         background-color: #2196f3;
         color: rgb(255, 255, 255);
         left: 0;
+        z-index: 1000;
     }
+
     .section {
         grid-area: section;
+        position: fixed;
+        top: 19%;
+        width: 100%;
+        background-color: #cfd8dc;
+        left: 0;
     }
+
+    .inputs {
+        grid-area: inputs;
+        position: fixed;
+        bottom: 19%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input[type="text"], textarea {
+
+        background-color : #f1f5f7; 
+      
+      }
+    .username {
+        background: #f1f5f7;
+    }
+
+    .password {
+        background-color: #f1f5f7;
+    }
+
+    .colorbutton{
+        border-radius: 2px;
+        background-color: #2196f3;
+        color: rgb(255, 255, 255);
+    }
+    .footer {
+        grid-area: footer;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #2196f3;
+        color: rgb(255, 255, 255);
+        left: 0;
+    }
+
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome {
+        text-align: center
+    }
+
+    .signinmessage {
+        text-align: center
+    }
+
     h1 {
-        
+        padding-left: 16px;
     }
 
-   
-    
+    h2 {
+        padding-left: 16px;
+    }
 
-   
+
+
+
 
 
 
