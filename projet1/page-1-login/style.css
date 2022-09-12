@@ -1,0 +1,35 @@
+@media screen and (max-width: 10000000px) {
+    .container{
+        background-color: #cfd8dc;
+        display: grid;
+        
+        grid-template-rows: 20px auto;
+        grid-template-areas:
+            "header"
+            "section"
+            ;
+    }
+    .header {
+        grid-area: header;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2196f3;
+        color: rgb(255, 255, 255);
+        left: 0;
+    }
+    .section {
+        grid-area: section;
+    }
+    h1 {
+        
+    }
+
+   
+    
+
+   
+
+
+
+}
