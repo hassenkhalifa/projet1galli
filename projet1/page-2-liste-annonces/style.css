@@ -17,6 +17,10 @@
     position: relative;
     display: flex;
     align-items: center;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
 
 }
 
@@ -26,12 +30,22 @@
     text-align: center;
 }
 
+img {
+    width: 100px;
+    height: 100px
+}
+
 .footer {
     grid-area: footer;
     background-color: #2196f3;
     color: #ffffff;
     display: flex;
     align-items: center;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+
 }
 
 .tabs {
@@ -41,8 +55,6 @@
     justify-content: stretch;
     grid-template-areas:
         "aads mads";
-    position: relative;
-
 }
 
 .aads {
@@ -80,6 +92,7 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: stretch;
+    grid-row-gap: 15px;
     grid-template-areas:
         "addone addone addone"
         "addtwo addtwo addtwo";
@@ -88,16 +101,62 @@
 
 .addone {
     grid-area: addone;
-    background-color: black;
-    width: 100px;
-    height: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+
+}
+
+.addone:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+
+}
+
+.time {
+    margin-top: 37px;
+    margin-left: 3px;
+    margin-bottom: 1px;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 3%;
+    margin-left: 85%;
 }
 
 .addtwo {
     grid-area: addtwo;
-    background-color: red;
-    width: 100px;
-    height: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+
+}
+
+.addtwo:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+
 }
 
 h1 {
@@ -107,4 +166,19 @@ h1 {
 
 h2 {
     padding-left: 10px;
+}
+
+h3 {
+
+    margin-right: 43px;
+    margin-top: 1px;
+    margin-left: 3px;
+    margin-bottom: 1px;
+    color: black;
+}
+
+.p {
+
+    margin-top: 3px;
+    margin-left: 3px;
 }
