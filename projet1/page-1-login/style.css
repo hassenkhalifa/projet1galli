@@ -1,100 +1,113 @@
-@media screen and (max-width: 10000000px) {
-    .container {
-        background-color: #cfd8dc;
-        display: grid;
-
-        grid-template-rows: 20px auto auto 20px;
-        grid-template-areas:
-            "header"
-            "section"
-            "inputs"
-            "footer"
-        ;
-    }
-
-    .header {
-        grid-area: header;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: #2196f3;
-        color: rgb(255, 255, 255);
-        left: 0;
-        z-index: 1000;
-    }
-
-    .section {
-        grid-area: section;
-        position: fixed;
-        top: 19%;
-        width: 100%;
-        background-color: #cfd8dc;
-        left: 0;
-    }
-
-    .inputs {
-        grid-area: inputs;
-        position: fixed;
-        bottom: 19%;
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    input[type="text"], textarea {
-
-        background-color : #f1f5f7; 
-      
-      }
-    .username {
-        background: #f1f5f7;
-    }
-
-    .password {
-        background-color: #f1f5f7;
-    }
-
-    .colorbutton{
-        border-radius: 2px;
-        background-color: #2196f3;
-        color: rgb(255, 255, 255);
-    }
-    .footer {
-        grid-area: footer;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #2196f3;
-        color: rgb(255, 255, 255);
-        left: 0;
-    }
-
-    img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .welcome {
-        text-align: center
-    }
-
-    .signinmessage {
-        text-align: center
-    }
-
-    h1 {
-        padding-left: 16px;
-    }
-
-    h2 {
-        padding-left: 16px;
-    }
+.container {
+    display: grid;
+    grid-template-columns: 0% 100% 0%;
+    grid-template-rows: 10% 80% 10%;
+    justify-content: stretch;
+    grid-template-areas:
+        "header header header "
+        "log log log"
+        "footer footer footer ";
+}
 
 
+.header {
+    grid-area: header;
+    background-color: #2196f3;
+    color: white;
+}
 
+h1 {
+    padding-left: 10px;
+}
 
+h2 {
+    padding-left: 10px;
+}
 
+.log {
+    grid-area: log;
 
+}
+
+.sign {
+    background-color: #cfd8dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image {
+    padding: 1%;
+}
+
+img {
+    background: white;
+    border-radius: 60px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+input[type="text"],
+textarea {
+    background: #f1f5f7;
+    border: 1px solid #ffffff;
+    background-color: #f1f5f7;
+    border-color: #ffffff;
+    height: 50px;
+    width: 80%;
+    
+}
+
+.username {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.password {
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 4%;
+}
+
+button {
+    background-color: #2196f3;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    border-color: #ffffff;
+    color: #ffffff;
+    height: 50px;
+    width: 80%;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2196f3;
+    color: white;
 
 }

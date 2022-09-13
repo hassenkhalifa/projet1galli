@@ -1,0 +1,110 @@
+.container {
+    display: grid;
+    grid-template-rows: 20% 10% 10% auto 20%;
+    justify-content: stretch;
+    grid-template-areas:
+        "header"
+        "tabs"
+        "tabs"
+        "main"
+        "footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: #2196f3;
+    color: #ffffff;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+.main {
+    grid-area: main;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #2196f3;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.tabs {
+    grid-area: tabs;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: stretch;
+    grid-template-areas:
+        "aads mads";
+    position: relative;
+
+}
+
+.aads {
+    grid-area: aads;
+    background-color: #2196f3;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.mads {
+    grid-area: mads;
+    background-color: #2196f3;
+    color: #ffffff;
+    text-align: center;
+}
+
+.aads:hover {
+
+    background-color: #219bf8;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.mads:hover {
+
+    background-color: #219bf8;
+    color: #ffffff;
+    text-align: center;
+}
+
+.addtiles {
+    grid-area: tabs;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: stretch;
+    grid-template-areas:
+        "addone addone addone"
+        "addtwo addtwo addtwo";
+
+}
+
+.addone {
+    grid-area: addone;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+
+.addtwo {
+    grid-area: addtwo;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+h1 {
+    padding-left: 10px;
+    justify-self: center
+}
+
+h2 {
+    padding-left: 10px;
+}
