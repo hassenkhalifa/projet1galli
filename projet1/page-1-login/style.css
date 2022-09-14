@@ -52,7 +52,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 input[type="text"],
@@ -63,7 +63,7 @@ textarea {
     border-color: #ffffff;
     height: 50px;
     width: 80%;
-    
+
 }
 
 .username {
@@ -73,7 +73,7 @@ textarea {
     align-items: center;
     justify-content: center;
     width: 100%;
-    
+
 }
 
 .password {
@@ -83,7 +83,7 @@ textarea {
     align-items: center;
     justify-content: center;
     width: 100%;
-  
+
 }
 
 .button {
@@ -113,5 +113,4 @@ button {
     position: fixed;
     width: 100%;
     left: 0px;
-
 }
