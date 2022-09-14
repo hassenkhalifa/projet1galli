@@ -109,5 +109,9 @@ button {
     grid-area: footer;
     background-color: #2196f3;
     color: white;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    left: 0px;
 
 }
